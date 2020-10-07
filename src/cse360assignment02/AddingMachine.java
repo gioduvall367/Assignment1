@@ -36,5 +36,7 @@ public class AddingMachine {
         total = 0;
         calls = " ";
     }
+    
 }
+
 
