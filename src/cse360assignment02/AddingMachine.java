@@ -2,6 +2,7 @@ package cse360assignment02;
 
 public class AddingMachine {
     private int total;
+    private String calls;
 
     // constructor for the AddingMachine class
     public AddingMachine () {
@@ -10,23 +11,30 @@ public class AddingMachine {
 
     // Returns the total of what has been added up
     public int getTotal () {
-        return 0;
+        return total;
     }
 
     // Performs the add
     public void add (int value) {
+        total = total + value;
+        calls = calls + "+" + value;
     }
 
     // Subtracts the parameter from the value
     public void subtract (int value) {
+        total = total - value;
+        calls = calls + "-" + value;
     }
 
     // Converts to a string value
     public String toString () {
-        return "";
+        return calls;
     }
 
 
     public void clear() {
+        total = 0;
+        calls = " ";
     }
 }
+
